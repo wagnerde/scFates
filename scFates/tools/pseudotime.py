@@ -249,7 +249,7 @@ def pseudotime(
     adata.uns["seg_colors"] = [
         np.array(adata.uns["milestones_colors"])[
             pd.Series(adata.uns["graph"]["milestones"]) == t
-        ][0]
+        ]
         for t in adata.uns["graph"]["pp_seg"].to
     ]
 
