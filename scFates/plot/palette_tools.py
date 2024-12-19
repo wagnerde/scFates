@@ -7,6 +7,7 @@ from . import palettes
 from matplotlib.colors import to_hex
 from matplotlib.colors import is_color_like
 
+from .. import logging as logg
 
 def _validate_palette(adata, key):
     """
